@@ -6,3 +6,16 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .section__text {
+    padding-left: 0;
+    text-align: center;
+  }
+}

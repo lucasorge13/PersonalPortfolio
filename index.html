@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
 </head>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <body>
   <nav id="desktop-nav">
     <div class="logo">Lucas Sorge</div>
@@ -36,10 +37,10 @@
     </div>
   </nav>
   <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/about-pic.jpg" alt="Profile Picture" class="about-pic">
+    <div class="section__pic-container" data-aos="fade-right">
+      <img src="./assets/about-pic.jpg" alt="Lucas Sorge - Profile Picture" class="about-pic" loading="lazy">
     </div>
-    <div class="section__text">
+    <div class="section__text" data-aos="fade-left">
       <p class="section__text__p1"> Hello, I'm</p>
       <h1 class="title">Lucas Sorge</h1>
       <p class="section__text__p2">Computer Science and Data Science Student at Iowa State University</p>
@@ -342,5 +343,13 @@
     </nav>
   </footer>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+  });
+</script>
 </body>
 </html>

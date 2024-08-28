@@ -36,21 +36,35 @@
       </div>
     </div>
   </nav>
-  <section id="profile">
+  <section id="profile" aria-labelledby="profile-title">
     <div class="section__pic-container" data-aos="fade-right">
       <img src="./assets/about-pic.jpg" alt="Lucas Sorge - Profile Picture" class="about-pic" loading="lazy">
     </div>
     <div class="section__text" data-aos="fade-left">
       <p class="section__text__p1"> Hello, I'm</p>
-      <h1 class="title">Lucas Sorge</h1>
+      <h1 id="profile-title" class="title">Lucas Sorge</h1>
       <p class="section__text__p2">Computer Science and Data Science Student at Iowa State University</p>
       <div class="btn-container">
         <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download CV</button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='http://www.linkedin.com/in/lucas-sorge-/'">
-        <img src="./assets/github.png" alt="My github Profile" class="icon" onclick="location.href='https://github.com/lucasorge13'">
+      <a href="http://www.linkedin.com/in/lucas-sorge-/" aria-label="LinkedIn Profile">
+        <img 
+        src="./assets/linkedin.png" 
+        alt="My Linkedin Profile" 
+        class="icon" 
+        onclick="location.href='http://www.linkedin.com/in/lucas-sorge-/'"
+        >
+      </a>
+      <a href="https://github.com/lucasorge13" aria-label="GitHub Profile">
+        <img 
+        src="./assets/github.png" 
+        alt="My github Profile" 
+        class="icon" 
+        onclick="location.href='https://github.com/lucasorge13'"
+        >
+      </a>
       </div>
     </div>
   </section>

@@ -251,6 +251,8 @@ section {
   gap: 1 rem;
 }
 
+/*ABOUT SECTION*/
+
 #about {
   position: relative;
 }
@@ -296,6 +298,25 @@ section {
   height: 80%;
 }
 
+.text-container {
+  padding: 2rem;             
+  background-color: #f9f9f9; 
+  border-radius: 1rem;       
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;         
+  font-size: 1.1rem;        
+  color: #333;   
+}
+
+.text-container p {
+  margin-bottom: 1.5rem;    
+}
+
+.text-container h2 {
+  font-size: 2rem;        
+  margin-bottom: 1rem;      
+  color: #007bff;            
+}
 /* EXPERIENCE SECTION */
 
 #experience {

@@ -467,3 +467,42 @@ footer {
 footer p {
   text-align: center;
 }
+
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --primary-color: #007bff;
+  --secondary-color: #555;
+  /* Add more variables as needed */
+}
+
+[data-theme="dark"] {
+  --background-color: #1e1e1e;
+  --text-color: #f1f1f1;
+  --primary-color: #1e90ff;
+  --secondary-color: #ccc;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.title {
+  color: var(--text-color);
+}
+
+.section__text p {
+  color: var(--secondary-color);
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}

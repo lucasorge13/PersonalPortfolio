@@ -434,6 +434,50 @@ article .icon {
   cursor: default;
 }
 
+@media screen and (max-width: 768px) {
+  .experience-details-container {
+      flex-direction: column;
+  }
+
+  .skill {
+      width: 100%;
+      justify-content: space-between;
+  }
+}
+
+.skill-icon {
+  width: 50px;  /* Set a fixed width */
+  height: 50px;  /* Set a fixed height */
+  object-fit: contain;  /* Ensure the image scales properly */
+  margin-right: 1rem;  /* Add some space between the icon and the text */
+}
+
+.skill {
+  display: flex;
+  align-items: center;  /* Align items vertically center */
+  margin-bottom: 1.5rem;  /* Add some space between each skill */
+}
+
+.skill h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;  /* Set a consistent height for the progress bars */
+  margin-left: 1rem;  /* Add some space between the icon and progress bar */
+}
+
+.progress {
+  height: 100%;  /* Ensure the progress bar fills the height of its container */
+  background-color: var(--primary-color);  /* Use a consistent color */
+  border-radius: 10px;
+}
+
 /* PROJECTS SECTION */
 
 #projects {

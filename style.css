@@ -88,12 +88,12 @@ a:hover{
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links{
   position: absolute;
-  top: right;
+  top: 0;
   right: 0;
   background-color: white;
   width: fit-content;
@@ -282,7 +282,7 @@ section {
 }
 
 .btn-container {
-  gap: 1 rem;
+  gap: 1rem;
 }
 
 /*ABOUT SECTION*/
@@ -461,20 +461,21 @@ article .icon {
 .skill h3 {
   margin: 0;
   font-size: 1.2rem;
+  min-width: 100px;
 }
 
 .progress-bar {
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #e0e0e0; /* Fallback color */
   border-radius: 10px;
   overflow: hidden;
-  height: 10px;  /* Set a consistent height for the progress bars */
-  margin-left: 1rem;  /* Add some space between the icon and progress bar */
+  height: 10px; /* Set a consistent height for the progress bars */
+  margin-left: 1rem; /* Add some space between the icon and progress bar */
 }
 
 .progress {
-  height: 100%;  /* Ensure the progress bar fills the height of its container */
-  background-color: var(--primary-color);  /* Use a consistent color */
+  height: 100%; /* Ensure the progress bar fills the height of its container */
+  background-color: var(--primary-color); /* Use a consistent color */
   border-radius: 10px;
 }
 
@@ -562,13 +563,6 @@ footer p {
   --primary-color: #007bff;
   --secondary-color: #555;
   /* Add more variables as needed */
-}
-
-[data-theme="dark"] {
-  --background-color: #1e1e1e;
-  --text-color: #f1f1f1;
-  --primary-color: #1e90ff;
-  --secondary-color: #ccc;
 }
 
 body {

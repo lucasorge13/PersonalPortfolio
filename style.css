@@ -349,13 +349,21 @@ section {
 }
 
 .text-container {
-  padding: 2rem;             
-  background-color: #f9f9f9; 
-  border-radius: 1rem;       
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  line-height: 1.6;         
-  font-size: 1.1rem;        
-  color: #333;   
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.section__text__p1 {
+  color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
 }
 
 .text-container p {
@@ -366,6 +374,26 @@ section {
   font-size: 2rem;        
   margin-bottom: 1rem;      
   color: #007bff;            
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  }
+
+  .details-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .details-container h3, .details-container p {
+      text-align: center;
+  }
+
+  .text-container {
+      padding: 1rem;
+  }
 }
 /* EXPERIENCE SECTION */
 

@@ -699,3 +699,113 @@ body {
   font-size: 1.5rem;
   z-index: 1001;
 }
+
+/* Mobile Styles */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .section-container,
+  .about-details-container,
+  .experience-details-container,
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 2rem;
+  }
+
+  .details-container {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-img,
+  .project-img-chess {
+    height: auto;
+    width: 100%;
+  }
+
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .project-tags {
+    justify-content: center;
+  }
+
+  .project-summary,
+  .project-title {
+    text-align: center;
+  }
+}
+
+/* Smaller Mobile Devices */
+@media screen and (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .section__text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .details-container {
+    padding: 1rem;
+  }
+
+  .about-containers,
+  .experience-details-container,
+  .project-tags {
+    flex-direction: column;
+  }
+
+  .skill-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .section__text__p1,
+  .section__text__p2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-container,
+  .project-summary {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .btn-container {
+    gap: 0.5rem;
+  }
+}
+
+/* Ensure Images and Containers Adjust Properly */
+.section__pic-container img,
+.project-img,
+.project-img-chess {
+  max-width: 100%;
+  height: auto;
+}

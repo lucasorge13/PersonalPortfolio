@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <!-- Linking external CSS files -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -12,6 +13,7 @@
     rel="stylesheet"
   />
   <body>
+    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
       <div class="logo">Lucas Sorge</div>
       <div>
@@ -23,6 +25,8 @@
         </ul>
       </div>
     </nav>
+
+     <!-- Mobile Navigation with Hamburger Menu -->
     <nav id="hamburger-nav">
       <div class="logo">Lucas Sorge</div>
       <div class="hamburger-menu">
@@ -39,6 +43,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- Profile Section -->
     <section id="profile" aria-labelledby="profile-title">
       <div class="section__pic-container" data-aos="fade-right">
         <img
@@ -55,6 +61,7 @@
           Computer Science and Data Science Student at Iowa State University
         </p>
         <div class="btn-container">
+          <!-- Button to download CV -->
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/Resume.pdf')"
@@ -62,7 +69,10 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <!-- Button to navigate to Contact section -->
+          <button 
+          class="btn btn-color-1" 
+          onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
@@ -89,6 +99,8 @@
         </div>
       </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -170,6 +182,8 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- Experience Section -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -347,6 +361,8 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- Project Section  -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -483,6 +499,8 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
+    <!-- Contact Section  -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -509,6 +527,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer>
       <nav>
         <div class="nav-links-container">

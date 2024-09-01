@@ -1,372 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
-</head>
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Lucas Sorge</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Lucas Sorge</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile" aria-labelledby="profile-title">
-    <div class="section__pic-container" data-aos="fade-right">
-      <img src="./assets/about-pic.jpg" alt="Lucas Sorge - Profile Picture" class="about-pic" loading="lazy">
-    </div>
-    <div class="section__text" data-aos="fade-left">
-      <p class="section__text__p1"> Hello, I'm</p>
-      <h1 id="profile-title" class="title">Lucas Sorge</h1>
-      <p class="section__text__p2">Computer Science and Data Science Student at Iowa State University</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')" aria-label="Download CV">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-      <a href="http://www.linkedin.com/in/lucas-sorge-/" aria-label="LinkedIn Profile">
-        <img 
-        src="./assets/linkedin.png" 
-        alt="My Linkedin Profile" 
-        class="icon" 
-        onclick="location.href='http://www.linkedin.com/in/lucas-sorge-/'"
-        >
-      </a>
-      <a href="https://github.com/lucasorge13" aria-label="GitHub Profile">
-        <img 
-        src="./assets/github.png" 
-        alt="My github Profile" 
-        class="icon" 
-        onclick="location.href='https://github.com/lucasorge13'"
-        >
-      </a>
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container" data-aos="fade-up">
-            <img src="./assets/experience.png" alt="experience icon" class="icon">
-            <h3>Experience</h3>
-            <p>2+ years <br>Software Development</p>
-          </div>
-          <div class="details-container" data-aos="fade-up" data-aos-delay="200">
-            <img src="./assets/education.png" alt="Education icon" class="icon">
-            <h3>Education</h3>
-            <p>B.Sc. Computer Science <br>Minor in Data Science</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            I am Lucas Sorge, a dedicated and ambitious Computer Science and Data Science student at Iowa State University. With a strong foundation in both front-end and back-end development, I am passionate about leveraging technology to solve complex problems and build impactful solutions.
-          </p>
-          <p>
-            Throughout my academic journey, I have developed a robust skill set that spans across various programming languages and technologies, including Java, Python, JavaScript, CSS, HTML, ReactJS, SQL, and NoSQL. My hands-on experience includes designing and implementing a neural network, developing a chess engine, and creating visualizers for sorting algorithms and pathfinding. Each of these projects has honed my ability to approach challenges methodically and deliver efficient, scalable solutions.
-          </p>
-          <p>
-            Beyond technical expertise, I bring a strong problem-solving mindset, effective teamwork, and adaptability to any environment. Fluent in English, Portuguese, and with advanced proficiency in Spanish, I am equipped to collaborate in diverse, multicultural teams.
-          </p>
-          <p>
-            I am constantly driven by a desire to learn and grow, always seeking opportunities to apply my knowledge in real-world scenarios. Whether it’s through contributing to open-source projects, developing innovative applications, or exploring new technologies, I am committed to making a meaningful impact in the field of technology.
-            <p><strong>Let's collaborate!</strong> <button class="btn btn-color-1" onclick="location.href='./#contact'">Get in Touch</button></p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
-    
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-
-    <div class="experience-details-container">
-      <div class="about-containers">
-          <!-- Frontend Development Skills -->
-          <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                  <div class="skill" data-aos="fade-right">
-                      <img src="./assets/html5.svg" alt="HTML Icon" class="skill-icon">
-                      <h3>HTML</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="100">
-                      <img src="./assets/css3.svg" alt="CSS Icon" class="skill-icon">
-                      <h3>CSS</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="200">
-                      <img src="./assets/javascript.svg" alt="JavaScript Icon" class="skill-icon">
-                      <h3>JavaScript</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="300">
-                      <img src="./assets/react.svg" alt="React Icon" class="skill-icon">
-                      <h3>ReactJS</h3>
-                    </div>
-                      <div class="skill" data-aos="fade-right" data-aos-delay="400">
-                        <img src="./assets/bootstrap.svg" alt="Bootstrap Icon" class="skill-icon">
-                        <h3>Bootstrap</h3>
-                    </div>
-                    <div class="skill" data-aos="fade-right" data-aos-delay="500">
-                        <img src="./assets/tailwindcss.svg" alt="Tailwind CSS Icon" class="skill-icon">
-                        <h3>Tailwind CSS</h3>
-                    </div>
-                </div>
-            </div>
-
-          <!-- Backend Development Skills -->
-          <div class="details-container">
-              <h2 class="experience-sub-title">Backend Development</h2>
-              <div class="article-container">
-                  <div class="skill" data-aos="fade-right">
-                      <img src="./assets/JavaIcon.avif" alt="Java Icon" class="skill-icon">
-                      <h3>Java</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="100">
-                      <img src="./assets/python.svg" alt="Python Icon" class="skill-icon">
-                      <h3>Python</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="200">
-                      <img src="./assets/NodeJs.jpeg" alt="NodeJS Icon" class="skill-icon">
-                      <h3>NodeJS</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="300">
-                      <img src="./assets/git.svg" alt="Git Icon" class="skill-icon">
-                      <h3>Git</h3>
-                  </div>
-
-                  <div class="skill" data-aos="fade-right" data-aos-delay="400">
-                    <img src="./assets/springboot.svg" alt="Spring Boot Icon" class="skill-icon">
-                    <h3>Spring Boot</h3>
-                </div>
-                <div class="skill" data-aos="fade-right" data-aos-delay="500">
-                    <img src="./assets/docker.svg" alt="Docker Icon" class="skill-icon">
-                    <h3>Docker</h3>
-                </div>
-              </div>
-          </div>
-
-          <!-- Data Skills -->
-          <div class="details-container">
-              <h2 class="experience-sub-title">Data Management & Analysis</h2>
-              <div class="article-container">
-                  <div class="skill" data-aos="fade-right">
-                      <img src="./assets/mysql.svg" alt="SQL Icon" class="skill-icon">
-                      <h3>MySQL</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="100">
-                      <img src="./assets/postgresql.svg" alt="NoSQL Icon" class="skill-icon">
-                      <h3>PostGreSQL</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="200">
-                    <img src="./assets/mongodb.svg" alt="MongoDB Icon" class="skill-icon">
-                    <h3>MongoDB</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="200">
-                      <img src="./assets/numpy.svg" alt="NumPy Icon" class="skill-icon">
-                      <h3>NumPy</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="300">
-                      <img src="./assets/pandas.svg" alt="Pandas Icon" class="skill-icon">
-                      <h3>Pandas</h3>
-                  </div>
-                  <div class="skill" data-aos="fade-right" data-aos-delay="400">
-                      <img src="./assets/excelIcon.jpeg" alt="Excel Icon" class="skill-icon">
-                      <h3>Excel</h3>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>  
-
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'"
-    />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-
-
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <!-- Project One - Neural Network-->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/neuralNetwork.jpeg"
-              alt="Project 1"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Neural Network</h2>
-          <p class="project-summary">
-            Designed and implemented a neural network from scratch using Python. Applied optimization techniques and various activation functions to enhance the model's accuracy and performance.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Tensor Flow</span>
-            <span class="tag">NumPy</span>
-          </div>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href= 'https://github.com/lucasorge13/Neural_Network_Project.git'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-        <!-- Project Two -  Chess Engine Project -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/ChessEngine.jpg"
-              alt="Project 2"
-              class="project-img-chess"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Chess Engine</h2>
-          <p class="project project-summary">
-            Developed a chess engine using advanced algorithms in Java, simulating intelligent gameplay through efficient move generation and evaluation functions.
-          </p>
-          <div>
-            <span class="tag">Java</span>
-            <span class="tag">Algorithms</span>
-            <span class="tag">Game Development</span>
-          </div>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/lucasorge13/Chess_Engine.git'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-        <!-- project three - Sorting Visualizer Project-->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/Sorting-Visualizer.jpeg"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Sorting Visualizer Project</h2>
-          <p class="project project-summary">
-            Developed an interactive tool to visualize sorting algorithms step by step using JavaScript, HTML, and CSS, aimed at enhancing understanding of algorithmic processes.
-          </p>
-          <div>
-            <span class="tag">JavaScript</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-          </div>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/lucasorge13/sorting-visualizer.git'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-
-         <!-- PathFind Visualizer Project -->
-         <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/Path-Visualizer.jpeg"
-              alt="PathFind Visualizer Project"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">PathFind Visualizer</h2>
-          <p class="project-summary">
-            Created a tool to visualize pathfinding algorithms, implementing and demonstrating various algorithms in a clear and interactive manner using JavaScript, HTML, and CSS.
-          </p>
-          <div class="project-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-          </div>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/lucasorge13/path-visualizer.git'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:examplemail@gmail.com">lucasorge13@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="https://www.linkedin.com/in/lucas-sorge-/">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  />
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Lucas Sorge</div>
+      <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -375,15 +23,512 @@
         </ul>
       </div>
     </nav>
-  </footer>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true,
-  });
-</script>
-</body>
+    <nav id="hamburger-nav">
+      <div class="logo">Lucas Sorge</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" aria-labelledby="profile-title">
+      <div class="section__pic-container" data-aos="fade-right">
+        <img
+          src="./assets/about-pic.jpg"
+          alt="Lucas Sorge - Profile Picture"
+          class="about-pic"
+          loading="lazy"
+        />
+      </div>
+      <div class="section__text" data-aos="fade-left">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 id="profile-title" class="title">Lucas Sorge</h1>
+        <p class="section__text__p2">
+          Computer Science and Data Science Student at Iowa State University
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+            aria-label="Download CV"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a
+            href="http://www.linkedin.com/in/lucas-sorge-/"
+            aria-label="LinkedIn Profile"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My Linkedin Profile"
+              class="icon"
+              onclick="location.href='http://www.linkedin.com/in/lucas-sorge-/'"
+            />
+          </a>
+          <a href="https://github.com/lucasorge13" aria-label="GitHub Profile">
+            <img
+              src="./assets/github.png"
+              alt="My github Profile"
+              class="icon"
+              onclick="location.href='https://github.com/lucasorge13'"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <!-- Experience Block -->
+          <div class="details-container" data-aos="fade-up">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>2+ years <br />Software Development</p>
+          </div>
+          <!-- Education Block -->
+          <div
+            class="details-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>B.Sc. Computer Science <br />Minor in Data Science</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am Lucas Sorge, a dedicated and ambitious Computer Science and
+            Data Science student at Iowa State University. With a strong
+            foundation in both front-end and back-end development, I am
+            passionate about leveraging technology to solve complex problems and
+            build impactful solutions.
+          </p>
+          <p>
+            Throughout my academic journey, I have developed a robust skill set
+            that spans across various programming languages and technologies,
+            including Java, Python, JavaScript, CSS, HTML, ReactJS, SQL, and
+            NoSQL. My hands-on experience includes designing and implementing a
+            neural network, developing a chess engine, and creating visualizers
+            for sorting algorithms and pathfinding. Each of these projects has
+            honed my ability to approach challenges methodically and deliver
+            efficient, scalable solutions.
+          </p>
+          <p>
+            Beyond technical expertise, I bring a strong problem-solving
+            mindset, effective teamwork, and adaptability to any environment.
+            Fluent in English, Portuguese, and with advanced proficiency in
+            Spanish, I am equipped to collaborate in diverse, multicultural
+            teams.
+          </p>
+          <p>
+            I am constantly driven by a desire to learn and grow, always seeking
+            opportunities to apply my knowledge in real-world scenarios. Whether
+            it’s through contributing to open-source projects, developing
+            innovative applications, or exploring new technologies, I am
+            committed to making a meaningful impact in the field of technology.
+          </p>
+          <div>
+            <strong>Let's collaborate!</strong>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Get in Touch
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Arrow to Experience Section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Frontend Development Skills -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <div class="skill" data-aos="fade-right">
+                <img
+                  src="./assets/html5.svg"
+                  alt="HTML Icon"
+                  class="skill-icon"
+                />
+                <h3>HTML</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="100">
+                <img
+                  src="./assets/css3.svg"
+                  alt="CSS Icon"
+                  class="skill-icon"
+                />
+                <h3>CSS</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                <img
+                  src="./assets/javascript.svg"
+                  alt="JavaScript Icon"
+                  class="skill-icon"
+                />
+                <h3>JavaScript</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="300">
+                <img
+                  src="./assets/react.svg"
+                  alt="React Icon"
+                  class="skill-icon"
+                />
+                <h3>ReactJS</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="400">
+                <img
+                  src="./assets/bootstrap.svg"
+                  alt="Bootstrap Icon"
+                  class="skill-icon"
+                />
+                <h3>Bootstrap</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="500">
+                <img
+                  src="./assets/tailwindcss.svg"
+                  alt="Tailwind CSS Icon"
+                  class="skill-icon"
+                />
+                <h3>Tailwind CSS</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Development Skills -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <div class="skill" data-aos="fade-right">
+                <img
+                  src="./assets/JavaIcon.avif"
+                  alt="Java Icon"
+                  class="skill-icon"
+                />
+                <h3>Java</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="100">
+                <img
+                  src="./assets/python.svg"
+                  alt="Python Icon"
+                  class="skill-icon"
+                />
+                <h3>Python</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                <img
+                  src="./assets/NodeJs.jpeg"
+                  alt="NodeJS Icon"
+                  class="skill-icon"
+                />
+                <h3>NodeJS</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="300">
+                <img src="./assets/git.svg" alt="Git Icon" class="skill-icon" />
+                <h3>Git</h3>
+              </div>
+
+              <div class="skill" data-aos="fade-right" data-aos-delay="400">
+                <img
+                  src="./assets/springboot.svg"
+                  alt="Spring Boot Icon"
+                  class="skill-icon"
+                />
+                <h3>Spring Boot</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="500">
+                <img
+                  src="./assets/docker.svg"
+                  alt="Docker Icon"
+                  class="skill-icon"
+                />
+                <h3>Docker</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Skills -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Management & Analysis</h2>
+            <div class="article-container">
+              <div class="skill" data-aos="fade-right">
+                <img
+                  src="./assets/mysql.svg"
+                  alt="SQL Icon"
+                  class="skill-icon"
+                />
+                <h3>MySQL</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="100">
+                <img
+                  src="./assets/postgresql.svg"
+                  alt="NoSQL Icon"
+                  class="skill-icon"
+                />
+                <h3>PostGreSQL</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                <img
+                  src="./assets/mongodb.svg"
+                  alt="MongoDB Icon"
+                  class="skill-icon"
+                />
+                <h3>MongoDB</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                <img
+                  src="./assets/numpy.svg"
+                  alt="NumPy Icon"
+                  class="skill-icon"
+                />
+                <h3>NumPy</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="300">
+                <img
+                  src="./assets/pandas.svg"
+                  alt="Pandas Icon"
+                  class="skill-icon"
+                />
+                <h3>Pandas</h3>
+              </div>
+              <div class="skill" data-aos="fade-right" data-aos-delay="400">
+                <img
+                  src="./assets/excelIcon.jpeg"
+                  alt="Excel Icon"
+                  class="skill-icon"
+                />
+                <h3>Excel</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project One - Neural Network-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/neuralNetwork.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Neural Network</h2>
+            <p class="project-summary">
+              Designed and implemented a neural network from scratch using
+              Python. Applied optimization techniques and various activation
+              functions to enhance the model's accuracy and performance.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Tensor Flow</span>
+              <span class="tag">NumPy</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href= 'https://github.com/lucasorge13/Neural_Network_Project.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <!-- Project Two -  Chess Engine Project -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ChessEngine.jpg"
+                alt="Project 2"
+                class="project-img-chess"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chess Engine</h2>
+            <p class="project project-summary">
+              Developed a chess engine using advanced algorithms in Java,
+              simulating intelligent gameplay through efficient move generation
+              and evaluation functions.
+            </p>
+            <div>
+              <span class="tag">Java</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Game Development</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lucasorge13/Chess_Engine.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <!-- project three - Sorting Visualizer Project-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Sorting-Visualizer.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Sorting Visualizer Project
+            </h2>
+            <p class="project project-summary">
+              Developed an interactive tool to visualize sorting algorithms step
+              by step using JavaScript, HTML, and CSS, aimed at enhancing
+              understanding of algorithmic processes.
+            </p>
+            <div>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lucasorge13/sorting-visualizer.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <!-- PathFind Visualizer Project -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Path-Visualizer.jpeg"
+                alt="PathFind Visualizer Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              PathFind Visualizer
+            </h2>
+            <p class="project-summary">
+              Created a tool to visualize pathfinding algorithms, implementing
+              and demonstrating various algorithms in a clear and interactive
+              manner using JavaScript, HTML, and CSS.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lucasorge13/path-visualizer.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com">lucasorge13@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/lucas-sorge-/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
 </html>

@@ -1,5 +1,5 @@
-/* GENERAL */
-
+/* GENERAL STYLES */
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -7,27 +7,30 @@
   padding: 0;
 }
 
+/* Setting default font family for the entire website */
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Enabling smooth scrolling behavior */
 html {
   scroll-behavior: smooth;
 }
 
+/* Default color for paragraphs */
 p {
   color: rgb(85, 85, 85);
 }
 
-/* TRANSITION */
-
+/* TRANSITION STYLES */
+/* Smooth transition for links and buttons */
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* NAVIGATION */
-
+/* NAVIGATION STYLES */
+/* Flexbox layout for navigation */
 nav,
 .nav-links {
   display: flex;
@@ -39,6 +42,7 @@ nav {
   height: 17vh;
 }
 
+/* Default link styles */
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -51,6 +55,7 @@ a {
   text-decoration-color: white;
 }
 
+/* Hover effect for links */
 a:hover {
   color: grey;
   text-decoration: underline;
@@ -58,6 +63,7 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+/* Logo styling */
 .logo {
   font-size: 2rem;
 }
@@ -66,8 +72,8 @@ a:hover {
   cursor: default;
 }
 
-/* MENU */
-
+/* HAMBURGER MENU STYLES (MOBILE) */
+/* Initially hiding the hamburger menu */
 #hamburger-nav {
   display: none;
 }
@@ -77,6 +83,7 @@ a:hover {
   display: inline-block;
 }
 
+/* Styling for hamburger icon */
 .hamburger-icon {
   display: flex;
   flex-direction: column;
@@ -93,6 +100,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+/* Menu links for mobile navigation */
 .menu-links {
   position: absolute;
   top: 0;
@@ -118,10 +126,12 @@ a:hover {
   list-style: none;
 }
 
+/* Open state for the menu links */
 .menu-links.open {
   max-height: 300px;
 }
 
+/* Animation for the hamburger icon */
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
@@ -134,6 +144,7 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
+/* Resetting transformations */
 .hamburger-icon span:first-child {
   transform: none;
 }
@@ -146,8 +157,8 @@ a:hover {
   transform: none;
 }
 
-/*SECTIONS*/
-
+/*SECTIONS STYLES*/
+/* Common section padding and margin */
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -161,7 +172,7 @@ section {
 }
 
 /*PROFILE SECTION*/
-
+/* Flexbox layout for profile section */
 #profile {
   display: flex;
   justify-content: center;
@@ -170,6 +181,7 @@ section {
   padding: 4rem 2rem;
 }
 
+/* Styling for profile picture */
 .section__pic-container img {
   height: 400px;
   width: 400px;
@@ -179,14 +191,17 @@ section {
   transition: transform 0.3s ease;
 }
 
+/* Hover effect for profile picture */
 .section__pic-container img:hover {
   transform: scale(1.05);
 }
 
+/* Centering text in profile section */
 .section__text {
   text-align: center;
 }
 
+/* Paragraph styles in profile section */
 .section__text p {
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -194,12 +209,14 @@ section {
   font-weight: 600;
 }
 
+/* Smaller text style */
 .section__text__p1 {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 0.5rem;
 }
 
+/* Larger text style */
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
@@ -214,6 +231,7 @@ section {
   margin: 0.5rem 0;
 }
 
+/* Social media icons container */
 #socials-container {
   display: flex;
   justify-content: center;
@@ -237,8 +255,8 @@ section {
   opacity: 0.8;
 }
 
-/* BUTTONS */
-
+/* BUTTON STYLES */
+/* Container for buttons */
 .btn-container {
   display: flex;
   justify-content: center;
@@ -291,8 +309,8 @@ section {
   gap: 1rem;
 }
 
-/*ABOUT SECTION*/
-
+/* ABOUT SECTION */
+/* Styling for About section */
 #about {
   position: relative;
   background: linear-gradient(
@@ -304,6 +322,7 @@ section {
   border-radius: 1rem;
 }
 
+/* Flexbox layout for containers */
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -324,6 +343,7 @@ section {
   border-radius: 2rem;
 }
 
+/* Arrow navigation styling */
 .arrow {
   position: absolute;
   right: -5rem;
@@ -345,6 +365,7 @@ section {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Transition effect for text in details container */
 .details-container h3,
 .details-container p {
   transition: color 0.3s ease;
@@ -387,6 +408,7 @@ section {
   color: #007bff;
 }
 
+/* Responsive styles for About section */
 @media screen and (max-width: 768px) {
   #about {
     padding: 2rem 1rem;
@@ -407,8 +429,9 @@ section {
     padding: 1rem;
   }
 }
-/* EXPERIENCE SECTION */
 
+/* EXPERIENCE SECTION */
+/* Positioning for experience section */
 #experience {
   position: relative;
 }
@@ -477,7 +500,7 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
-
+/* Padding and background for projects section */
 #projects {
   padding: 4rem 2rem;
   background-color: var(--background-color);
@@ -512,7 +535,12 @@ article .icon {
 }
 
 .tag {
-  background-color: rgba(0, 123, 255, 0.1); /* Light background with transparency */
+  background-color: rgba(
+    0,
+    123,
+    255,
+    0.1
+  ); /* Light background with transparency */
   color: black;
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
@@ -585,8 +613,8 @@ article .icon {
   transform: scale(1.05);
 }
 
-/* CONTACT */
-
+/* CONTACT SECTION */
+/* Flexbox layout for contact section */
 #contact {
   display: flex;
   justify-content: center;
@@ -626,7 +654,7 @@ article .icon {
 }
 
 /* FOOTER SECTION */
-
+/* Footer height and margin */
 footer {
   height: 26vh;
   margin: 0 1rem;
@@ -636,6 +664,8 @@ footer p {
   text-align: center;
 }
 
+/* THEME VARIABLES AND STYLING */
+/* Defining root variables for consistent theming */
 :root {
   --background-color: #f9f9f9;
   --text-color: #333;
@@ -658,6 +688,7 @@ body {
   color: var(--secondary-color);
 }
 
+/* Positioning and styling for theme toggle button */
 #theme-toggle {
   position: fixed;
   top: 1rem;

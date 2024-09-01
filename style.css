@@ -464,21 +464,6 @@ article .icon {
   min-width: 100px;
 }
 
-.progress-bar {
-  width: 100%;
-  background-color: #e0e0e0; /* Fallback color */
-  border-radius: 10px;
-  overflow: hidden;
-  height: 10px; /* Set a consistent height for the progress bars */
-  margin-left: 1rem; /* Add some space between the icon and progress bar */
-}
-
-.progress {
-  height: 100%; /* Ensure the progress bar fills the height of its container */
-  background-color: var(--primary-color); /* Use a consistent color */
-  border-radius: 10px;
-}
-
 /* PROJECTS SECTION */
 
 #projects {
